@@ -919,9 +919,9 @@ body{
     .box-banner {
         position: absolute;
         margin-top: 5%;
-        margin-left: 25%;
-        width: 50%;
-        height: 85%;
+        margin-left: 22%;
+        width: 56%;
+        height: 75%;
         border: 2px solid #333;
         box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
         border-top-left-radius: 50px;
@@ -1060,7 +1060,7 @@ body{
 
     .btnUm, .btnDois {
         position: absolute;
-        width: 35%;
+        width: 36%;
         height: 9%;
         border-radius: 8px;
         transition: 600ms;
@@ -1082,11 +1082,11 @@ body{
     }
 
     .btnUm{
-        left: 10%;
+        left: 9%;
     }
 
     .btnDois{
-        right: 10%;
+        right: 9%;
     }
 
     .principalSecundary{
