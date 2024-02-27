@@ -1,0 +1,915 @@
+@import url('https://fonts.cdnfonts.com/css/friz-quadrata-std');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Friz Quadrata Std', sans-serif;
+}
+
+body{
+    background-color: #4444;
+}
+
+@media(max-width: 1920px){
+
+    .box-banner {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 37%;
+        width: 26%;
+        height: 80%;
+        border: 2px solid #333;
+        box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(134deg, #010f1d, #010f1d, #010f1d, #8b8d90, #010f1d, #010f1d, #010f1d);
+        background-size: 1400% 1400%;
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        40%{background-position:51% 100%}
+        60%{background-position:50% 0%}
+        100%{background-position:50% 0%}
+    }
+
+    .box-routes{
+        background-color: #333;
+        margin-top: 8%;
+        margin-left: 30%;
+        width: 40%;
+        height: 3rem;
+        border: 3px solid transparent; /* torna a borda transparente */
+        border-radius: 2px;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 1; /* ajuste o ângulo e as cores conforme necessário */
+    }
+
+    .opcoesRoutes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        transition: 500ms;
+        background-color: #0d1f31;
+        cursor: pointer;
+    }
+
+    .opcoesRoutes:hover{
+        transition: 500ms;
+        background-color: rgb(58, 72, 87);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 2rem;
+        color: #FFD700;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .boxChampion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        margin-top: 2rem;
+    }
+
+    .imgChampion{
+        width: 7rem;
+        height: 7rem;
+        border: 3px solid transparent;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 0.5;
+    }
+
+    .boxRunes{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 80%;
+        height: 15rem;
+    }
+
+    .runesPrimary, .runesSecundary{
+        width: 50%;
+        height: 100%;
+    }
+
+    .principalPrimary, .principalSecundary{
+        width: 100%;
+        height: 25%;
+    }
+
+    .othersPrimary, .othersSecundary{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    .imgRunaPrincipal{
+        width: 65px;
+        height: 65px;
+        margin-top: -3%;
+        margin-left: -3%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .imgRunas {
+        width: 45px;
+        height: 45px;
+        margin-top: 10%;
+        margin-left: 2%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .boxButtton{
+        margin-top: 3rem;
+        margin-left: 15%;
+        width: 100%;
+        height: 10%;
+    }
+
+    .btnUm, .btnDois {
+        position: absolute;
+        width: 35%;
+        height: 7%;
+        border-radius: 8px;
+        transition: 600ms;
+        background: linear-gradient(to right, #cfa440, #986b2c);
+        border: 3px solid #705024;
+        box-shadow: 0.1rem 0.1rem 0.8rem #010f1d;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .btnUm:active, .btnDois:active{
+        font-size: 1.2rem;
+    }
+
+    .btnUm:hover, .btnDois:hover{
+        transition: 600ms;
+        background: linear-gradient(to right, #d4af57, #9b743d);
+    }
+
+    .btnUm{
+        left: 10%;
+    }
+
+    .btnDois{
+        right: 10%;
+    }
+
+    .principalSecundary{
+        display: none;
+    }
+}
+
+@media(max-width: 1600px){
+
+    .box-banner {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 30%;
+        height: 70%;
+        border: 2px solid #333;
+        box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(134deg, #010f1d, #010f1d, #010f1d, #8b8d90, #010f1d, #010f1d, #010f1d);
+        background-size: 1400% 1400%;
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        40%{background-position:51% 100%}
+        60%{background-position:50% 0%}
+        100%{background-position:50% 0%}
+    }
+
+    .box-routes{
+        background-color: #333;
+        margin-top: 8%;
+        margin-left: 30%;
+        width: 40%;
+        height: 3rem;
+        border: 3px solid transparent; /* torna a borda transparente */
+        border-radius: 2px;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 1; /* ajuste o ângulo e as cores conforme necessário */
+    }
+
+    .opcoesRoutes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        transition: 500ms;
+        background-color: #0d1f31;
+        cursor: pointer;
+    }
+
+    .opcoesRoutes:hover{
+        transition: 500ms;
+        background-color: rgb(58, 72, 87);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 2rem;
+        color: #FFD700;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .boxChampion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        margin-top: 2rem;
+    }
+
+    .imgChampion{
+        width: 7rem;
+        height: 7rem;
+        border: 3px solid transparent;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 0.5;
+    }
+
+    .boxRunes{
+        display: flex;
+        margin-top: 8%;
+        margin-left: 10%;
+        width: 80%;
+        height: 15rem;
+    }
+
+    .runesPrimary, .runesSecundary{
+        width: 50%;
+        height: 100%;
+    }
+
+    .principalPrimary, .principalSecundary{
+        width: 100%;
+        height: 25%;
+    }
+
+    .othersPrimary, .othersSecundary{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    .imgRunaPrincipal{
+        width: 65px;
+        height: 65px;
+        margin-top: -3%;
+        margin-left: -3%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .imgRunas {
+        width: 45px;
+        height: 45px;
+        margin-top: 10%;
+        margin-left: 2%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .boxButtton{
+        margin-top: 5rem;
+        margin-left: 15%;
+        width: 100%;
+        height: 10%;
+    }
+
+    .btnUm, .btnDois {
+        position: absolute;
+        width: 35%;
+        height: 7%;
+        border-radius: 8px;
+        transition: 600ms;
+        background: linear-gradient(to right, #cfa440, #986b2c);
+        border: 3px solid #705024;
+        box-shadow: 0.1rem 0.1rem 0.8rem #010f1d;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .btnUm:active, .btnDois:active{
+        font-size: 1.2rem;
+    }
+
+    .btnUm:hover, .btnDois:hover{
+        transition: 600ms;
+        background: linear-gradient(to right, #d4af57, #9b743d);
+    }
+
+    .btnUm{
+        left: 10%;
+    }
+
+    .btnDois{
+        right: 10%;
+    }
+
+    .principalSecundary{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px){
+
+    .box-banner {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 30%;
+        height: 70%;
+        border: 2px solid #333;
+        box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(134deg, #010f1d, #010f1d, #010f1d, #8b8d90, #010f1d, #010f1d, #010f1d);
+        background-size: 1400% 1400%;
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        40%{background-position:51% 100%}
+        60%{background-position:50% 0%}
+        100%{background-position:50% 0%}
+    }
+
+    .box-routes{
+        background-color: #333;
+        margin-top: 8%;
+        margin-left: 30%;
+        width: 40%;
+        height: 3rem;
+        border: 3px solid transparent; /* torna a borda transparente */
+        border-radius: 2px;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 1; /* ajuste o ângulo e as cores conforme necessário */
+    }
+
+    .opcoesRoutes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        transition: 500ms;
+        background-color: #0d1f31;
+        cursor: pointer;
+    }
+
+    .opcoesRoutes:hover{
+        transition: 500ms;
+        background-color: rgb(58, 72, 87);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 2rem;
+        color: #FFD700;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .boxChampion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        margin-top: 2rem;
+    }
+
+    .imgChampion{
+        width: 7rem;
+        height: 7rem;
+        border: 3px solid transparent;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 0.5;
+    }
+
+    .boxRunes{
+        display: flex;
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 15rem;
+    }
+
+    .runesPrimary, .runesSecundary{
+        width: 50%;
+        height: 100%;
+    }
+
+    .principalPrimary, .principalSecundary{
+        width: 100%;
+        height: 25%;
+    }
+
+    .othersPrimary, .othersSecundary{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    .imgRunaPrincipal{
+        width: 65px;
+        height: 65px;
+        margin-top: -3%;
+        margin-left: -3%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .imgRunas {
+        width: 45px;
+        height: 45px;
+        margin-top: 10%;
+        margin-left: 2%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .boxButtton{
+        margin-top: 3rem;
+        margin-left: 15%;
+        width: 100%;
+        height: 10%;
+    }
+
+    .btnUm, .btnDois {
+        position: absolute;
+        width: 35%;
+        height: 7%;
+        border-radius: 8px;
+        transition: 600ms;
+        background: linear-gradient(to right, #cfa440, #986b2c);
+        border: 3px solid #705024;
+        box-shadow: 0.1rem 0.1rem 0.8rem #010f1d;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .btnUm:active, .btnDois:active{
+        font-size: 1rem;
+    }
+
+    .btnUm:hover, .btnDois:hover{
+        transition: 600ms;
+        background: linear-gradient(to right, #d4af57, #9b743d);
+    }
+
+    .btnUm{
+        left: 10%;
+    }
+
+    .btnDois{
+        right: 10%;
+    }
+
+    .principalSecundary{
+        display: none;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .box-banner {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 30%;
+        height: 80%;
+        border: 2px solid #333;
+        box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(134deg, #010f1d, #010f1d, #010f1d, #8b8d90, #010f1d, #010f1d, #010f1d);
+        background-size: 1400% 1400%;
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        40%{background-position:51% 100%}
+        60%{background-position:50% 0%}
+        100%{background-position:50% 0%}
+    }
+
+    .box-routes{
+        background-color: #333;
+        margin-top: 8%;
+        margin-left: 32%;
+        width: 36%;
+        height: 2.5rem;
+        border: 3px solid transparent; /* torna a borda transparente */
+        border-radius: 2px;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 1; /* ajuste o ângulo e as cores conforme necessário */
+    }
+
+    .opcoesRoutes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        transition: 500ms;
+        background-color: #0d1f31;
+        cursor: pointer;
+    }
+
+    .opcoesRoutes:hover{
+        transition: 500ms;
+        background-color: rgb(58, 72, 87);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #FFD700;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .boxChampion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        margin-top: 1rem;
+    }
+
+    .imgChampion{
+        width: 6rem;
+        height: 6rem;
+        border: 3px solid transparent;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 0.5;
+    }
+
+    .boxRunes{
+        display: flex;
+        margin-top: 8%;
+        margin-left: 10%;
+        width: 80%;
+        height: 15rem;
+    }
+
+    .runesPrimary, .runesSecundary{
+        width: 50%;
+        height: 100%;
+    }
+
+    .principalPrimary, .principalSecundary{
+        width: 100%;
+        height: 25%;
+    }
+
+    .othersPrimary, .othersSecundary{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    .imgRunaPrincipal{
+        width: 55px;
+        height: 55px;
+        margin-top: -3%;
+        margin-left: -3%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .imgRunas {
+        width: 35px;
+        height: 35px;
+        margin-top: 10%;
+        margin-left: 2%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .boxButtton{
+        margin-top: -0.5rem;
+        margin-left: 15%;
+        width: 100%;
+        height: 10%;
+    }
+
+    .btnUm, .btnDois {
+        position: absolute;
+        width: 35%;
+        height: 9%;
+        border-radius: 8px;
+        transition: 600ms;
+        background: linear-gradient(to right, #cfa440, #986b2c);
+        border: 3px solid #705024;
+        box-shadow: 0.1rem 0.1rem 0.8rem #010f1d;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .btnUm:active, .btnDois:active{
+        font-size: 0.9rem;
+    }
+
+    .btnUm:hover, .btnDois:hover{
+        transition: 600ms;
+        background: linear-gradient(to right, #d4af57, #9b743d);
+    }
+
+    .btnUm{
+        left: 10%;
+    }
+
+    .btnDois{
+        right: 10%;
+    }
+
+    .principalSecundary{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+
+    .box-banner {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 34%;
+        width: 32%;
+        height: 85%;
+        border: 2px solid #333;
+        box-shadow: 0.3rem 0.3rem 0.5rem #010f1d;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(134deg, #010f1d, #010f1d, #010f1d, #8b8d90, #010f1d, #010f1d, #010f1d);
+        background-size: 1400% 1400%;
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+
+    @keyframes AnimationName {
+        0%{background-position:50% 0%}
+        40%{background-position:51% 100%}
+        60%{background-position:50% 0%}
+        100%{background-position:50% 0%}
+    }
+
+    .box-routes{
+        background-color: #333;
+        margin-top: 8%;
+        margin-left: 29%;
+        width: 42%;
+        height: 2.5rem;
+        border: 3px solid transparent; /* torna a borda transparente */
+        border-radius: 2px;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 1; /* ajuste o ângulo e as cores conforme necessário */
+    }
+
+    .opcoesRoutes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+        transition: 500ms;
+        background-color: #0d1f31;
+        cursor: pointer;
+    }
+
+    .opcoesRoutes:hover{
+        transition: 500ms;
+        background-color: rgb(58, 72, 87);
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #FFD700;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .boxChampion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        margin-top: 0.3rem;
+    }
+
+    .imgChampion{
+        width: 5.5rem;
+        height: 5.5rem;
+        border: 3px solid transparent;
+        box-shadow: 0.1rem 0.2rem 0.5rem #986b2c;
+        border-image: linear-gradient(to right, #cfa440, #986b2c) 0.5;
+    }
+
+    .boxRunes{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 80%;
+        height: 15rem;
+    }
+
+    .runesPrimary, .runesSecundary{
+        width: 50%;
+        height: 100%;
+    }
+
+    .principalPrimary, .principalSecundary{
+        width: 100%;
+        height: 25%;
+    }
+
+    .othersPrimary, .othersSecundary{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    .imgRunaPrincipal{
+        width: 50px;
+        height: 50px;
+        margin-top: -3%;
+        margin-left: -3%;
+        border: 3px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .imgRunas {
+        width: 30px;
+        height: 30px;
+        margin-top: 10%;
+        margin-left: 2%;
+        border: 2px solid #986b2c ; 
+        border-radius: 50%; 
+    }
+
+    .boxButtton{
+        margin-top: -2.5rem;
+        margin-left: 15%;
+        width: 100%;
+        height: 10%;
+    }
+
+    .btnUm, .btnDois {
+        position: absolute;
+        width: 35%;
+        height: 9%;
+        border-radius: 8px;
+        transition: 600ms;
+        background: linear-gradient(to right, #cfa440, #986b2c);
+        border: 3px solid #705024;
+        box-shadow: 0.1rem 0.1rem 0.8rem #010f1d;
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+    .btnUm:active, .btnDois:active{
+        font-size: 0.7rem;
+    }
+
+    .btnUm:hover, .btnDois:hover{
+        transition: 600ms;
+        background: linear-gradient(to right, #d4af57, #9b743d);
+    }
+
+    .btnUm{
+        left: 10%;
+    }
+
+    .btnDois{
+        right: 10%;
+    }
+
+    .principalSecundary{
+        display: none;
+    }
+}

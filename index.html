@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador-League Of Legends</title>
+
+    <link rel="stylesheet" href="Css/Styles.css">
+    <script src="Script/Script.js"></script>
+</head>
+<body>
+    <!-- Borda -->
+    <div class="box-banner">
+        <div class="box-routes">
+            <select id="opcoesRoutes" name="opcoesRoutes" class="opcoesRoutes">
+                <option class="routesOpcoes" value="autoFill">Auto Fill</option>
+                <option class="routesOpcoes" value="topLaner">Top Laner</option>
+                <option class="routesOpcoes" value="jungle">Jungle</option>
+                <option class="routesOpcoes" value="midLaner">Mid Laner</option>
+                <option class="routesOpcoes" value="adcarry">Adcarry</option>
+                <option class="routesOpcoes" value="support">Support</option>
+            </select>
+        </div>
+        <h2>Selecione a rota!</h2>
+
+        <div class="boxChampion">
+            <img src="Img/Champions/00.png" alt="Imagem do Champions do lol" class="imgChampion">
+        </div>
+
+        <div class="boxRunes">
+            <div class="runesPrimary">
+                <div class="principalPrimary">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunaPrincipal" id="imgRunaPrincipal">
+                </div>
+                <div class="othersPrimary">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunas" id="linhaUm">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunas" id="linhaDois">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunas" id="linhaTres">
+                </div>
+
+            </div>
+            <div class="runesSecundary">
+                <div class="principalSecundary">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunaPrincipal" id="imgRunaSecundary">
+                </div>
+                <div class="othersSecundary">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunas" id="secoundaryLinhaUm">
+                    <img src="Img/Runes/000.png" alt="Icone de runas do lol" class="imgRunas" id="secoundaryLinhaDois">
+                </div>
+            </div>
+        </div>
+        
+        <div class="boxButtton">
+            <button onclick="buscarChamp()" class="btnUm" value="">Buscar Campeão</button>
+            <button onclick="buscarRuna()" class="btnDois" value="">Buscar Runas</button>
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>
